@@ -1,7 +1,6 @@
 // import {PANOLENS} from scripts/panolens.min.js
 var panorama1, panorama2, viewer;
 
-// panorama1 = new PANOLENS.GoogleStreetviewPanorama( 'y0rbkep4RBcAAAQqZe0GiQ' );
 panorama1 = new PANOLENS.ImagePanorama("./images/Entrance.jpg");
 panorama2 = new PANOLENS.ImagePanorama("./images/reception.jpg");
 panorama3 = new PANOLENS.ImagePanorama("./images/EBlockCenter.jpg");
