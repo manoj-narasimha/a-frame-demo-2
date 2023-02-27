@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, shrink-to-fit=no">
-    <title>Panolens.js Development Example</title>
+    <title>Amrita Campous Tour</title>
     <style>
       html, body {
         margin: 0;
@@ -38,48 +38,13 @@
         top: 0;
       }
     </style>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.147.0/three.min.js" integrity="sha512-GWXLkqxMENYgBdQvA/lTeOV+R2auhasgKQxjMTWBFt3Z6GJVZ9owiyAMOzz0Wt6J1ri8bf/g2kHJV0uvWpJTuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
   </head>
 
   <body>
   
-  <script src="https://pchen66.github.io/js/three/three.min.js"></script>
-  <script src="https://pchen66.github.io/js/panolens/panolens.min.js"></script>
-  <!-- <script src="../scripts/three.js" type="script"></script> -->
-  <!-- <script src="../scripts/panolens.min.js" type="script"></script> -->
-
-
-
     <div id="panolens-separate-container"></div>
-
-    <script>
-      // import {PANOLENS} from scripts/panolens.min.js
-      var panorama1, panorama2, viewer;
-
-      // panorama1 = new PANOLENS.GoogleStreetviewPanorama( 'y0rbkep4RBcAAAQqZe0GiQ' );
-      panorama1 = new PANOLENS.ImagePanorama( './images/entrance.jpg' );
-      panorama2 = new PANOLENS.ImagePanorama( './images/Layer 1 copy.jpg' );
-      panorama3 = new PANOLENS.ImagePanorama('./images/su.jpg');
-
-
-
-      viewer = new PANOLENS.Viewer();
-      viewer.add( panorama1 );
-      viewer.add( panorama2 );
-      viewer.add( panorama3 );
-
-      // Linking between panoramas
-      
-      // Pair
-      panorama1.link( panorama2, new THREE.Vector3( 3000, 3000, 3000 ) );
-      panorama2.link( panorama3, new THREE.Vector3( 3000, 3000, 3000 ) );
-
-
-
-      // Pair with custom scale and image
-      panorama1.link( panorama2, new THREE.Vector3( -400, -500, 500 ), 200, 'asset/textures/arrow-up.png' );
-      panorama3.link( panorama1, new THREE.Vector3( 1000, 1000, 1000 ));
-
-    </script>
+    <script src="https://pchen66.github.io/js/three/three.min.js"></script>
+    <script src="https://pchen66.github.io/js/panolens/panolens.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
