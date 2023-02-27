@@ -57,11 +57,9 @@
       var panorama1, panorama2, viewer;
 
       // panorama1 = new PANOLENS.GoogleStreetviewPanorama( 'y0rbkep4RBcAAAQqZe0GiQ' );
-      panorama1 = new PANOLENS.ImagePanorama( './images/su (1).png' );
-
-      panorama2 = new PANOLENS.ImagePanorama( './images/vyasa-hall.jpeg' );
-
-      panorama3 = new PANOLENS.ImagePanorama('./images/krishna-hall.jpeg');
+      panorama1 = new PANOLENS.ImagePanorama( './images/entrance1.jpg' );
+      panorama2 = new PANOLENS.ImagePanorama( './images/Layer 1 copy.jpg' );
+      panorama3 = new PANOLENS.ImagePanorama('./images/su.jpg');
 
 
 
@@ -79,7 +77,7 @@
 
 
       // Pair with custom scale and image
-      panorama1.link( panorama2, new THREE.Vector3( 1000, 1000, 1000 ), 200, 'asset/textures/1941-battle-thumb.png' );
+      panorama1.link( panorama2, new THREE.Vector3( -400, -500, 500 ), 200, 'asset/textures/arrow-up.png' );
       panorama3.link( panorama1, new THREE.Vector3( 1000, 1000, 1000 ));
 
     </script>
